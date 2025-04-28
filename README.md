@@ -33,9 +33,8 @@ mvn test
 - `src/test/java/examples/` - Contains test runners and feature files
 - `pom.xml` - Maven configuration with Karate dependencies
 - `Dockerfile` - Docker configuration for running tests in a container
-
+- `target/karate-reports` - karate reports output
 ## Features
-
-- Sample API tests using JSONPlaceholder
+- .env sample for secrets storage
+- run tests script
 - Dockerized test environment
-- Maven-based project structure
