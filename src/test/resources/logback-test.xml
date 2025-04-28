@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.thymeleaf" level="OFF"/>
+    <logger name="org.apache" level="OFF"/>
+    <logger name="httpclient" level="OFF"/>
+    <logger name="org.graalvm" level="OFF"/>
+    <logger name="org.springframework" level="OFF"/>
+    <logger name="org.mongodb" level="OFF"/>
+    <logger name="reactor" level="OFF"/>
+    <logger name="io.netty" level="OFF"/>
+    <logger name="org.jboss" level="OFF"/>
+    <logger name="org.eclipse" level="OFF"/>
+    <logger name="ch.qos.logback" level="OFF"/>
+    <logger name="org.slf4j" level="OFF"/>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
