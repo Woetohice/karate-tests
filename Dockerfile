@@ -18,4 +18,4 @@ RUN mvn clean package -DskipTests
 ENV KARATE_REPORT_DIR=/app/target/karate-reports
 
 # Set the entry point to run the tests with report configuration
-ENTRYPOINT ["mvn", "test", "-Dkarate.options=--output=/app/target/karate-reports"] 
+ENTRYPOINT ["mvn", "test","-Dtest=playground.PlaygroundTest","-Dkarate.env=local","-Dkarate.options=--output=/app/target/karate-reports"] 
