@@ -48,7 +48,7 @@ if [[ ! "$ENV" =~ ^(local|dev|qa|prod)$ ]]; then
 fi
 
 # Build the Maven command
-MAVEN_CMD="mvn test -Dkarate.env=$ENV"
+MAVEN_CMD="mvn test -Dtest=playground.PlaygroundTest -Dkarate.env=$ENV"
 
 # Add tags if specified
 if [ ! -z "$TAGS" ]; then
