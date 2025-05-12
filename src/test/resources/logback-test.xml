@@ -19,6 +19,9 @@
     <logger name="ch.qos.logback" level="OFF"/>
     <logger name="org.slf4j" level="OFF"/>
 
+    <!-- Enable Karate HTTP logging -->
+    <logger name="com.intuit.karate" level="DEBUG"/>
+
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
     </root>

@@ -12,23 +12,23 @@ function fn() {
     }
 
     // Read environment variables using the helper function
-    var baseUrl = env('BASE_URL');
+    var apiBaseUrl = env('API_BASE_URL');
     var apiKey = env('API_KEY');
     var apiSecret = env('API_SECRET');
 
     var config = {
         env: envName,
-        baseUrl: baseUrl || 'http://localhost:3030',
+        baseUrl: apiBaseUrl || 'http://localhost:3030',
         timeout: 5000
     };
 
     // Environment specific configurations
     if (envName === 'dev') {
-        config.baseUrl = baseUrl || 'https://dev-api.example.com';
+        config.baseUrl = apiBaseUrl || 'https://dev-api.example.com';
     } else if (envName === 'qa') {
-        config.baseUrl = baseUrl || 'https://qa-api.example.com';
+        config.baseUrl = apiBaseUrl || 'https://qa-api.example.com';
     } else if (envName === 'prod') {
-        config.baseUrl = baseUrl || 'https://api.example.com';
+        config.baseUrl = apiBaseUrl || 'https://api.example.com';
     }
 
     // Common headers for all requests
