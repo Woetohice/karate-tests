@@ -68,4 +68,15 @@ Background:
       "errors":{}
     }
     """
+    * def badRequestResponseSchema =
+    """
+    {
+      "name":'#string',
+      "message":'#string',
+      "code":'#number',
+      "className":'#string',
+      "data":{},
+      "errors":#[]
+    }
+    """
 Scenario: Background
