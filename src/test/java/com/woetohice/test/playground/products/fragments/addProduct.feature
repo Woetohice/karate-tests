@@ -35,7 +35,6 @@ And def payload =
   "image": #(image)
 }
 """
-And print payload
 And url baseUrl
 And request payload
 And path 'products/'

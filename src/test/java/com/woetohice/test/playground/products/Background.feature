@@ -23,7 +23,6 @@ Background:
     }
     """
   * def addProductResponseSchema =
-  * def productResponseSchema =
     """
     {
       id: '#number',
@@ -39,6 +38,34 @@ Background:
       image: '#string',
       updatedAt: '#string',
       createdAt: '#string'
+    }
+    """
+    * def deleteProductResponseSchema =
+    """
+    {
+      "id": '#number',
+      "name": '#string',
+      "type": '#string',
+      "price": '#number',
+      "upc": '#string',
+      "shipping": '#number',
+      "description": '#string',
+      "manufacturer": '#string',
+      "model": '#string',
+      "url": '#string',
+      "image": '#string',
+      "createdAt": '#string',
+      "updatedAt": '#string',
+    }
+    """
+    * def notFoundResponseSchema =
+    """
+    {
+      "name":'#string',
+      "message":'#string',
+      "code":'#number',
+      "className":'#string',
+      "errors":{}
     }
     """
 Scenario: Background

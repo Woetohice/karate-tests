@@ -1,4 +1,4 @@
-
+@ignore @fragment
 Feature: Retrieve Product by Id
   Background:
     * def bg = callonce read('classpath:com/woetohice/test/playground/products/Background.feature')
